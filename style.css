@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Rubik', sans-serif;
+}
+.Type1,.Type2,.Type3{
+    max-width: 150px;
+    max-height: 250px;
+}
+.flex{
+    display: flex;
+}
+.section-container{
+    flex-direction: column;
+    padding: 5%;
+}
+.space-between{
+    justify-content: space-between;
+    align-items: center;
+}
+nav{
+    background-color: rgb(190,171,1);
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+}
+nav img{
+    height: 30px;
+}
+nav div{
+    padding: 0% 5%;
+}
+#card{
+    font-weight: bold;
+    align-items: center;
+}
+.button{
+    background-color: #6095ff;
+    color: white;
+    padding: 7px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.buy{
+    margin-top: 15px;
+    padding-bottom: 50px;
+}
+h1,h2{
+    font-family: bold;
+    font-family: "Playfair Display","serif";
+}
+h4{
+    color: gray;
+    font-weight: lighter;
+}
+h6{
+    font-size: 17px;
+}
+h3{
+    width: 220px;
+    font-size: medium;
+}
+.buy p{
+    font-weight: bold;
+    font-size: 20px;
+}
+h3,h2{
+    margin-bottom: 10px;
+}
+.container{
+    flex-wrap: wrap;
+}
+footer{
+    background-color: lightgrey;
+    padding: 2% 3%;
+}
+
+/* Mobile Visibility */
+
+@media only screen and (max-width:600px){
+    body{
+        text-align: center;
+    }
+    .buy{
+        display: flex;
+        justify-content: center;
+    }
+    .buy p{
+        padding: 0% 5%;
+    }
+    nav h1{
+        font-size: 18px;
+    }
+    .container{
+        justify-content: center;
+    }
+}
